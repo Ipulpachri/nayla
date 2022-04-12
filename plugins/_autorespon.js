@@ -15,8 +15,8 @@ handler.all = async function (m, { isBlocked }) {
     try {
         if (m.mentionedJid.includes(this.user.jid) && m.isGroup) {
             await this.send2Button(m.chat,
-                isBanned ? 'DanzBot tidak aktif' : banned ? 'kamu dibanned' : 'lagi sad ga ush ngetag DanzBot dex',
-                'DanzBot',
+                isBanned ? 'Fachri Botz tidak aktif' : banned ? 'kamu dibanned' : 'lagi sad ga ush ngetag Fachri Botz dex',
+                'FachriBotz',
                 isBanned ? 'Unban' : banned ? 'Pemilik Bot' : 'Menu',
                 isBanned ? '.unban' : banned ? '.owner' : '.?',
                 m.isGroup ? 'Ban' : isBanned ? 'Unban' : 'Donasi',
@@ -38,7 +38,7 @@ handler.all = async function (m, { isBlocked }) {
 ╠➥ TOPUP/PIN
 ║- 088270863279 (Dana)
 ║- 088270863279 (Gopay)
-╠═〘 DanzBot 〙 ═`.trim(), 'DanzBot', 'Dana', '#viadigi', 'Gopay', '#viaumobile', m)
+╠═〘 Fachri 〙 ═`.trim(), '© ᴹᴿ᭄ Fachri botz ×፝֟͜×', 'Dana', '#viadigi', 'Gopay', '#viaumobile', m)
 }
 
     // salam
@@ -68,7 +68,7 @@ handler.all = async function (m, { isBlocked }) {
     if (new Date() * 1 - setting.status > 1000) {
         let _uptime = process.uptime() * 1000
         let uptime = clockString(_uptime)
-        await this.setStatus(`Im DanzBot🤖 | Aktif selama ${uptime} | Mode: ${global.opts['self'] ? 'Private' : setting.groupOnly ? 'Hanya Grup' : 'Publik'} |Bot by Danzz. `).catch(_ => _)
+        await this.setStatus(`Im FachriBotz🤖 | Aktif selama ${uptime} | Mode: ${global.opts['self'] ? 'Private' : setting.groupOnly ? 'Hanya Grup' : 'Publik'}`).catch(_ => _)
         setting.status = new Date() * 1
     }
 
