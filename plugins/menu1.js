@@ -6,12 +6,11 @@ let tags = {
 }
 const defaultMenu = {
   before: `
-Hello There
-Im DanzBot
+Hi, i'am FachriBotz
 
-UserName : %name
-Uptime : %uptime
-Total Features : 2500+
+Name User : %name
+Runtime Bot : %uptime
+Total Features Bot : 2500+
 
 Please Dont Click Readmore
 %readmore
@@ -20,8 +19,6 @@ Please Dont Click Readmore
   body: '',
   footer: '',
   after: `
-*%npmname@^%version*
-${'```%npmdesc```'}
 `,
 }
 let handler = async (m, { conn, usedPrefix: _p }) => {
@@ -121,7 +118,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     // conn.reply(m.chat, text.trim(), m)
-   conn.sendButton(m.chat, text.trim(), 'Click This', 'ALL MENU', '.allmenu', '☕ Owner', '.owner')
+   conn.sendButton(m.chat, text.trim(), 'Jika Kalian Pakai Wa Mod/ Lama Langsung Ketik .allmenu aja', 'All Menu', '.allmenu', 'Owner', '.owner')
   } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
     throw e
