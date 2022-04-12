@@ -278,10 +278,10 @@ let tags = {
     conn.menu = conn.menu ? conn.menu : {}
 
     let before = conn.menu.before || `
-Hello %name
-Im *NayLaBotz* And You Use 
+Hi, kak %name
+Im *Fachri Botz* And You Use 
 
-❏ Ｉｎｆｏ Ｂｏｔ
+❏ INFO BOT
 ▷ Bot Name : *${conn.getName(conn.user.jid)}*
 ▷ Mention : @${m.sender.replace(/@.+/, '')}
 ▷ Version : 1.52.9.6
@@ -290,7 +290,7 @@ Im *NayLaBotz* And You Use
 ▷ Total Features : 2500+
 
 
-❏ Ｉｎｆｏ Ｕｓｅｒ
+❏ INFO USER
 ▷ UserName : %name
 ▷ Age : ${registered ? '' + age : ''}
 ▷ Phone Number : ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}
@@ -307,7 +307,7 @@ Im *NayLaBotz* And You Use
 ▷ Total Exp : %totalexp
 
 
-❏ Ｄａｔｅ ＆ Ｔｉｍｅ
+❏ DATE & TIME
 ▷ Day : %week
 ▷ Date : %date
 ▷ Weton : %weton
@@ -317,7 +317,7 @@ Im *NayLaBotz* And You Use
 ▷ Time : ${wita} WITA
 
 
-❏ Ｄａｔａ
+❏ DATA
 ▷ Uptime : %uptime
 ▷ Main Uptime : %muptime
 ▷ Users In Database : %totalreg Users
@@ -393,11 +393,11 @@ Im *NayLaBotz* And You Use
 
     externalAdReply: {
 
-                    mediaUrl: 'https://youtu.be/-tKVN2mAKRI',
+                    mediaUrl: 'https://youtu.be/c/SaefulFahri',
 
-                    title: 'CREATED BY ZEVANO',
+                    title: 'CREATED BY FACHRI',
 
-                    body: 'NayLa-B0TZ',
+                    body: 'FACHRI-BOTZ',
 
                     thumbnail: await(await fetch(global.thum)).buffer()
 
